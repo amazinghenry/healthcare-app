@@ -1,0 +1,44 @@
+.mission-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.mission-group h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.mission-group p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+.mission-item:nth-child(1) {
+    width: 400px;
+}
+
+.mission-item:nth-child(2) {
+    justify-self:end;
+}
+
+@media screen and (max-width: 500px) {
+    .mission-item:nth-child(1) {
+        width: 100%;
+    }
+    
+    .mission-group {
+        grid-template-columns: 1fr;
+    }
+    .mission-item:nth-child(2) {
+        width: 100%;
+        justify-self:center;
+    }
+    
+}

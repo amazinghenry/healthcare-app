@@ -1,0 +1,25 @@
+.block-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.block-item {
+    width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .block-item {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .block-group {
+        flex-direction: column;
+    }
+    .block-item {
+        width: 80%;
+    }
+}
